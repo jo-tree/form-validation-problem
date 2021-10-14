@@ -1,0 +1,21 @@
+body {
+  background-color: rgb(218, 239, 253);
+}
+
+
+h2 {
+  padding-bottom: 20px;
+}
+.form {
+
+  padding: 20px 10px 20px 70px;
+}
+
+.eachLine {
+  padding: 10px 0px 10px 0px
+}
+
+.animalCheckbox {
+
+  /* display: table; */
+}
