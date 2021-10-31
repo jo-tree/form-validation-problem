@@ -65,7 +65,7 @@ function App () {
       <h2>Contact form</h2>
       <form>
       <div className='eachLine'>
-        <label for='email'>Email:</label>
+        <label htmlFor='email'>Email:</label>
         <input 
           type='email'
           placeholder='Email'
@@ -74,7 +74,7 @@ function App () {
           value={email}
           onChange={handleChange}
         />
-        <label for='password'>Password:</label>
+        <label htmlFor='password'>Password:</label>
         <input 
           type="password"
           placeholder='minimum 8 characters'
@@ -86,7 +86,7 @@ function App () {
         />
         </div>
         <div className='eachLine'>
-        <label for='colour'>Colour:
+        <label htmlFor='colour'>Colour:
           <select name='colour' id='colour' onChange={handleColour}>
             <option value='blue'>Blue</option>
             <option value='green'>Green</option>
@@ -108,7 +108,7 @@ function App () {
           checked={bear}  
           onChange={handleAnimals}
           />
-         <label for='bear'>Bear</label>
+         <label htmlFor='bear'>Bear</label>
         </div>
         <div className='animalCheckbox'>
             <input
@@ -118,7 +118,7 @@ function App () {
             checked={tiger}
             onChange={handleAnimals}
             />
-            <label for='tiger'>Tiger</label>
+            <label htmlFor='tiger'>Tiger</label>
             <div>
             {(newAnimals.tiger === false) ? null :
           <>
@@ -144,7 +144,7 @@ function App () {
             checked={snake}
             onChange={handleAnimals}
             />
-            <label for='snake'>Snake</label>
+            <label htmlFor='snake'>Snake</label>
         </div>
         <div className='animalCheckbox'>
             <input
@@ -155,7 +155,7 @@ function App () {
             checked={donkey}
             onChange={handleAnimals}
             />
-           <label for='donkey'>Donkey</label>
+           <label htmlFor='donkey'>Donkey</label>
         </div>
           <div className='eachLine'>
           <button onSubmit={handleSubmit}>
