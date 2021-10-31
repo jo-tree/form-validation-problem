@@ -65,7 +65,7 @@ function App () {
       <h2>Contact form</h2>
       <form>
       <div className='eachLine'>
-        <label>Email:</label>
+        <label for='email'>Email:</label>
         <input 
           type='email'
           placeholder='Email'
@@ -74,7 +74,7 @@ function App () {
           value={email}
           onChange={handleChange}
         />
-        <label>Password:</label>
+        <label for='password'>Password:</label>
         <input 
           type="password"
           placeholder='minimum 8 characters'
@@ -86,8 +86,8 @@ function App () {
         />
         </div>
         <div className='eachLine'>
-        <label>Colour:
-          <select name='colour' onChange={handleColour}>
+        <label for='colour'>Colour:
+          <select name='colour' id='colour' onChange={handleColour}>
             <option value='blue'>Blue</option>
             <option value='green'>Green</option>
             <option value='red'>Red</option>
@@ -104,19 +104,21 @@ function App () {
           type='checkbox' 
           label='Bear'
           name='bear'
+          id='bear'
           checked={bear}  
           onChange={handleAnimals}
           />
-          Bear
+         <label for='bear'>Bear</label>
         </div>
         <div className='animalCheckbox'>
             <input
             type='checkbox' 
             name='tiger'
+            id='tiger'
             checked={tiger}
             onChange={handleAnimals}
             />
-            Tiger
+            <label for='tiger'>Tiger</label>
             <div>
             {(newAnimals.tiger === false) ? null :
           <>
@@ -138,20 +140,22 @@ function App () {
             type='checkbox' 
             label='Snake'
             name='snake'
+            id='snake'
             checked={snake}
             onChange={handleAnimals}
             />
-            Snake
+            <label for='snake'>Snake</label>
         </div>
         <div className='animalCheckbox'>
             <input
             type='checkbox' 
             label='Donkey'
             name='donkey'
+            id='donkey'
             checked={donkey}
             onChange={handleAnimals}
             />
-            Donkey
+           <label for='donkey'>Donkey</label>
         </div>
           <div className='eachLine'>
           <button onSubmit={handleSubmit}>
